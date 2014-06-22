@@ -1,0 +1,71 @@
+
+<backends>
+    
+    
+  <backend name="b41gig">
+    <class>B4_1G</class>
+    <options>
+      <public>true</public>
+      <dynamic>true</dynamic>
+    </options>
+  </backend>
+     
+    
+    
+  <backend name="b4">
+    <class>B4</class>
+    <options>
+      <public>true</public>
+      <dynamic>true</dynamic>
+    </options>
+  </backend>
+     
+    
+  <backend name="b2">
+    <class>B2</class>
+    <options>
+      <public>true</public>
+      <dynamic>true</dynamic>
+    </options>
+  </backend>
+    
+      
+  <backend name="b1">
+    <class>B1</class>
+    <options>
+      <public>true</public>
+      <dynamic>true</dynamic>
+    </options>
+  </backend>
+    
+     
+    
+ <!-- 
+  <backend name="b8">
+    <class>B8</class>
+    <options>
+      <public>true</public>
+      <dynamic>true</dynamic>
+    </options>
+  </backend>
+      
+    
+  <backend name="b4">
+    <class>B4</class>
+    <options>
+      <public>true</public>
+      <dynamic>true</dynamic>
+    </options>
+  </backend>
+    
+    
+  <backend name="b2">
+    <class>B2</class>
+    <options>
+      <public>true</public>
+      <dynamic>true</dynamic>
+    </options>
+  </backend>
+    -->
+   
+</backends>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	version="2.5">
+	
+    <!-- 
+     FOR EACH EXPLICIT WEB PAGE, BACKEND STARTER, TASK STARTER 
+     
+     
+	<servlet>
+		<servlet-name>NAME</servlet-name>
+		<servlet-class>harlequinmettle.gaero.CLASSNAME</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>NAME</servlet-name>
+		<url-pattern>/webaddress</url-pattern>
+	</servlet-mapping>
+ 
+     -->
+     
+     
+	<servlet>
+		<servlet-name>CLEAR</servlet-name>
+		<servlet-class>harlequinmettle.gaero.ClearDatastoreServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CLEAR</servlet-name>
+		<url-pattern>/cleardatastore</url-pattern>
+	</servlet-mapping>
+	
+         
+     
+	<servlet>
+		<servlet-name>CRON</servlet-name>
+		<servlet-class>harlequinmettle.gaero.CronJob</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CRON</servlet-name>
+		<url-pattern>/collect</url-pattern>
+	</servlet-mapping>
+	
+     
+
+	<servlet>
+		<servlet-name>QUALITYTASK</servlet-name>
+		<servlet-class>harlequinmettle.gaero.StartDataQualityTask</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>QUALITYTASK</servlet-name>
+		<url-pattern>/dataqualitytask</url-pattern>
+	</servlet-mapping>
+	
+
+	<servlet>
+		<servlet-name>CALLDATAQUALITY</servlet-name>
+		<servlet-class>harlequinmettle.gaero.DataQualityServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CALLDATAQUALITY</servlet-name>
+		<url-pattern>/dataqualitystarter</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>BACKEND</servlet-name>
+		<servlet-class>harlequinmettle.gaero.BackendServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>BACKEND</servlet-name>
+		<url-pattern>/backend</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>GAERo</servlet-name>
+		<servlet-class>harlequinmettle.gaero.BasicServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GAERo</servlet-name>
+		<url-pattern>/gaero</url-pattern>
+	</servlet-mapping>
+	
+
+	<servlet>
+		<servlet-name>EMAILRECEIVER</servlet-name>
+		<servlet-class>harlequinmettle.gaero.AppInbox</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EMAILRECEIVER</servlet-name>
+		<url-pattern>/_ah/mail/*</url-pattern>
+	</servlet-mapping>
+	<security-constraint>
+		<web-resource-collection>
+			<web-resource-name>Admin Resources</web-resource-name>
+			<url-pattern>/_ah/mail/*</url-pattern>
+		</web-resource-collection>
+		<auth-constraint>
+			<role-name>admin</role-name>
+		</auth-constraint>
+	</security-constraint>
+
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+</web-app>
+ 

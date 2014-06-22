@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cronentries>
+    
+  
+  <cron>
+    <url>/collect</url>
+    <description>collect -program    data</description>
+    <schedule>every day 1:00</schedule>  
+    <timezone>US/Pacific</timezone>
+  </cron>
+        
+          
+  
+  <cron>
+    <url>/collect</url>
+    <description>collect -program    data</description>
+    <schedule>every day 3:00</schedule>  
+    <timezone>US/Pacific</timezone>
+  </cron>
+        
+      
+  
+  <cron>
+    <url>/collect</url>
+    <description>collect -program    data</description>
+    <schedule>every day 3:20</schedule>  
+    <timezone>US/Pacific</timezone>
+  </cron>
+              
+  
+  <cron>
+    <url>/collect</url>
+    <description>collect -program    data</description>
+    <schedule>every day 5:20</schedule>  
+    <timezone>US/Pacific</timezone>
+  </cron>
+        
+  
+
+  
+ 
+  <cron>
+    <url>/cleardatastore</url>
+    <description>collect -program    data</description>
+    <schedule>every thursday 23:00</schedule>  
+    <timezone>US/Pacific</timezone>
+  </cron>
+         
+  <cron>
+    <url>/cleardatastore</url>
+    <description>collect -program    data</description>
+    <schedule>every thursday 23:05</schedule>  
+    <timezone>US/Pacific</timezone>
+  </cron>
+         
+ 
+  
+</cronentries>
